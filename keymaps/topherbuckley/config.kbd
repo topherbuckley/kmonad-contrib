@@ -37,7 +37,8 @@
 (defalias
   nav  (tap-hold 500 f (layer-toggle navigation))
   num  (tap-hold 500 c (layer-toggle numbers))
-  v2t  (cmd-button "echo hello")
+  v2t (cmd-button "nerd-dictation resume"
+                  "nerd-dictation suspend")
 )
 
 
