@@ -1,7 +1,7 @@
 
 (defcfg
   ;; Linux
-  input  (device-file "/dev/input/by-id/usb-SONiX_USB_DEVICE-event-kbd")
+  input  (device-file "$KBD_DEV")
   output (uinput-sink "KMonad output")
 
   ;; Windows
@@ -31,7 +31,7 @@
   tab  q    w    e    r    t    y    u    i    o      p     [     ]     \      del
   caps a    s    d    f    g    h    j    k    l      ;     '     ret          pgup
   lsft z    x    c    v    b    n    m    ,    .      /     rsft        up     pgdn
-  lctl lmet lalt           spc            ralt        rctl        left  down   right 
+  lctl lmet lalt           spc            ralt        rctl        left  down   right
 )
 
 (defalias
@@ -56,7 +56,7 @@
   _    _    _    _    _    _    _    _     pgdn pgup   _    _     _     _     _
   _    _    _    _    _    _    left down  up   right  _    _     _           _
   _    _    _    _    @v2t _    _    _     _    _      _    _           _     _
-  _    _    _              del             _           _          _     _     _ 
+  _    _    _              del             _           _          _     _     _
 )
 
 (deflayer numbers
@@ -66,5 +66,3 @@
   _    _    _    _    _    _    _    1     2    3      _    _           _     _
   _    _    _              .               _           _          _     _     _
 )
-
-
