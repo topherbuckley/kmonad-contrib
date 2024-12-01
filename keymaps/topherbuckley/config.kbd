@@ -1,7 +1,7 @@
 
 (defcfg
   ;; Linux
-  input  (device-file "$KBD_DEV")
+  input  (device-file "/dev/input/by-id/usb-SONiX_USB_DEVICE-event-kbd")
   output (uinput-sink "KMonad output")
 
   ;; Windows
